@@ -46,6 +46,7 @@ const createUser = async (obj) => {
         gender: obj.gender,
         birthday: obj.birthday
     })
+    return data
 }
 
 const updateUser = async (id, obj) => {
