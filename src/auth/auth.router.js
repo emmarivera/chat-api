@@ -1,5 +1,4 @@
 const router = require('express').Router()
-const postLogin = require('./auth.sevices')
 const authServices = require('./auth.sevices')
 
 router.post('/login', authServices.postLogin)

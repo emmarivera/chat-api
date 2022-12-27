@@ -40,7 +40,7 @@ const Users = db.define('users', {
         type: DataTypes.DATEONLY,
         allowNull: false,
     },
-    rol: {
+    role: {
         type: DataTypes.STRING,
         defaultValue: 'normal'
     },
@@ -51,11 +51,7 @@ const Users = db.define('users', {
     isVerified: {
         type: DataTypes.BOOLEAN,
         defaultValue: false,
-            validate: {
-                len: [2, 50]
-            }
-    },
-    
+    }
 })
 
 module.exports = Users
